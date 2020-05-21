@@ -9,12 +9,31 @@ document.getElementById('bmi-form').addEventListener('submit', function(e){
 
     e.preventDefault();
 });
+//clearing the form
+// const clearForm = document.getElementById('clear-btn');
 
+// clearForm.addEventListener('click', clearAll);
+
+// function clearAll(){
+//   calculateResults.innerHTML = '';
+// }
 //creating resuts
+
+
+
+function clearAll(){
+  document.getElementById('bmi-form').reset();
+  }
+
 function calculateResults(){
   const height = document.getElementById('height');
   const weight = document.getElementById('weight');
   const result = document.getElementById('bmi-result');
+
+
+  const clearForm = document.getElementById('clear-btn');
+
+  clearForm.addEventListener('click', clearAll);
 
 
   const calWeight =(weight.value);

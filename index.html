@@ -36,22 +36,23 @@
               <div class="form-group pt-2">
                 <input type="submit" value="calculate" class="btn btn-primary btn-block">
               </div>
-              <a href="#" class="btn btn-dark btn-block" id="clear-btn">Clear</a>
+              <div class="form-group pt-2">
+                <a href="#" class="btn btn-dark btn-block" id="clear-btn">Clear</a>
+              </div>
+
+              <div id="results" class="pt-4 pb-2">
+                <h4>Results</h4>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="number" class="form-control" id="bmi-result" placeholder="Result" disabled>
+                  </div>
+                </div>
+                <strong>Please note: A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. </strong>
+              </div>
             </form>
 
             <div id="loading">
               <img src="loading.gif" alt="loading">
-            </div>
-
-
-            <div id="results" class="pt-4 pb-2">
-              <h4>Results</h4>
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="number" class="form-control" id="bmi-result" placeholder="Result" disabled>
-                </div>
-              </div>
-              <strong>Please note: A BMI of 25.0 or more is overweight, while the healthy range is 18.5 to 24.9. </strong>
             </div>
           </div> 
         </div>
